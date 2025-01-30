@@ -1,0 +1,32 @@
+﻿<Window x:Class="APIConnectionLB.MainWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:local="clr-namespace:APIConnectionLB"
+ mc:Ignorable="d"
+ Title="MainWindow" Height="260" Width="540" MinHeight="260" MinWidth="540"
+WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Margin="10,3,259,118">
+            <Button x:Name="ButtonGetFullName" Content="Получить данные"
+VerticalAlignment="Center" Height="48" HorizontalAlignment="Center" Width="194"
+Click="ButtonGetFullName_Click" />
+        </Grid>
+        <Grid Margin="10,119,259,8" Height="116">
+            <Button x:Name="ButtonSendResult" Content="Отправить результаты теста"
+HorizontalAlignment="Center" VerticalAlignment="Top" Height="48" Width="194"
+Margin="0,29,0,0" Click="ButtonSendResult_Click"/>
+        </Grid>
+        <Grid Margin="269,3,0,124">
+            <TextBlock x:Name="TextBlockFullName" TextWrapping="Wrap"
+HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Text="ФИО"
+Width="209"/>
+        </Grid>
+        <Grid Margin="268,127,1,0">
+            <TextBlock x:Name="TextBlockResult" TextWrapping="Wrap"
+HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"
+Text="Результаты" Width="237"/>
+        </Grid>
+    </Grid>
+</Window>
